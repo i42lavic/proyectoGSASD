@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomendacion de plataforma de almacenamiento</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendación de servicio de almacenamiento en la nube</h1>
+
+        <label>1. Tamaño aproximado de datos a almacenar</label>
+        <select id="tamano">
+            <option value="pequeño">Menos de 100 GB</option>
+            <option value="medio">Entre 100 GB y 5 TB</option>
+            <option value="grande">Más de 5 TB</option>
+        </select>
+
+
+        <label>2. Frecuencia de acceso a los datos</label>
+        <select id="frecuencia">
+            <option value="alta">Acceso diario</option>
+            <option value="media">Acceso semanal</option>
+            <option value="baja">Acceso ocasional</option>
+        </select>
+
+
+        <label>3. ¿Necesitáis colaboración y sincronización entre equipos?</label>
+        <select id="colaboracion">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+
+        <label>4. ¿Usáis Microsoft 365 en la empresa?</label>
+        <select id="microsoft">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+
+        <label>5. ¿Queréis integración con análisis de datos o IA?</label>
+        <select id="ia">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+
+        <button onclick="recomendar()">Obtener recomendación</button>
+        <div id="resultado"></div>
+
+    </div>
+</body>
+</html>

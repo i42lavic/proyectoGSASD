@@ -1,54 +1,138 @@
+/* --- Fondo general con efecto moderno --- */
 body {
-    background-image: url("img/fondo.jpg");
-    background-size: cover;       
-    background-repeat: no-repeat; 
-    background-attachment: fixed;  
-    background-position: center; 
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    padding: 20px;
+    margin: 0;
+    padding: 40px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+
+    /* Imagen + overlay degradado + blur */
+    background: linear-gradient(135deg, rgba(0, 92, 175, 0.7), rgba(0, 200, 255, 0.7)),
+                url("img/fondo.jpg") center/cover fixed;
+    backdrop-filter: blur(6px);
 }
+
+
+/* --- Contenedor principal estilo glassmorphism --- */
 .container {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+
+    animation: fadeIn 0.7s ease-out;
 }
+
+
+/* --- Animación de entrada suave --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* --- Título principal --- */
 h1 {
     text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
 }
+
+
+/* --- Etiquetas --- */
 label {
-    font-weight: bold;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 18px;
     display: block;
-    margin-top: 15px;
+    letter-spacing: 0.3px;
 }
+
+
+/* --- Selects e Inputs --- */
 select, input {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 12px 14px;
+    margin-top: 6px;
+    font-size: 15px;
+    
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #4aa3ff;
+    box-shadow: 0 0 8px rgba(74,163,255,0.6);
+}
+
+
+/* --- Botón principal --- */
 button {
-    margin-top: 20px;
+    margin-top: 28px;
     width: 100%;
-    padding: 12px;
-    background: #4CAF50;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: bold;
+
     border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
+    border-radius: 10px;
     cursor: pointer;
+
+    color: white;
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    box-shadow: 0 6px 15px rgba(0, 122, 255, 0.4);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 button:hover {
-    background: #43a047;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.55);
 }
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* --- Resultado con tarjeta bonita --- */
 .resultado {
-    background: #e8f5e9;
-    margin-top: 25px;
-    padding: 15px;
-    border-left: 4px solid #4CAF50;
-    border-radius: 5px;
+    margin-top: 30px;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.85);
+    border-left: 6px solid #2196F3;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    animation: slideUp 0.45s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.resultado h3 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+.resultado p {
+    font-size: 15px;
+    color: #333;
 }

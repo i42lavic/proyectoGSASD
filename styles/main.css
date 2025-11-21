@@ -1,48 +1,48 @@
-/* --- Fondo general con efecto moderno --- */
+/* Importar una tipografía moderna y bonita */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- Fondo general más claro y suave --- */
 body {
     margin: 0;
     padding: 40px;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 
-    /* Imagen + overlay degradado + blur */
-    background: linear-gradient(135deg, rgba(0, 92, 175, 0.7), rgba(0, 200, 255, 0.7)),
+    /* Fondo luminoso con degradado pastel */
+    background: linear-gradient(135deg, rgba(150, 205, 255, 0.6), rgba(255, 255, 255, 0.6)),
                 url("img/fondo.jpg") center/cover fixed;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
 }
 
 
-/* --- Contenedor principal estilo glassmorphism --- */
+/* --- Contenedor estilo glassmorphism suave y luminoso --- */
 .container {
     max-width: 750px;
     margin: auto;
     padding: 35px;
 
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.6);
 
     animation: fadeIn 0.7s ease-out;
 }
 
-
-/* --- Animación de entrada suave --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
 
-/* --- Título principal --- */
+/* --- Título --- */
 h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    color: #0b3d91;
     margin-bottom: 25px;
 }
 
@@ -50,22 +50,21 @@ h1 {
 /* --- Etiquetas --- */
 label {
     font-weight: 600;
-    color: #ffffff;
+    color: #0b3d91;
     margin-top: 18px;
     display: block;
-    letter-spacing: 0.3px;
 }
 
 
-/* --- Selects e Inputs --- */
+/* --- Inputs y selects --- */
 select, input {
     width: 100%;
     padding: 12px 14px;
     margin-top: 6px;
     font-size: 15px;
     
-    background: rgba(255,255,255,0.9);
-    border: 1px solid #d0d0d0;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #c9d6ff;
     border-radius: 8px;
 
     transition: all 0.25s ease;
@@ -74,33 +73,33 @@ select, input {
 
 select:focus, input:focus {
     outline: none;
-    border-color: #4aa3ff;
-    box-shadow: 0 0 8px rgba(74,163,255,0.6);
+    border-color: #6ea8fe;
+    box-shadow: 0 0 8px rgba(110,168,254,0.55);
 }
 
 
-/* --- Botón principal --- */
+/* --- Botón --- */
 button {
     margin-top: 28px;
     width: 100%;
     padding: 14px;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 600;
 
     border: none;
     border-radius: 10px;
     cursor: pointer;
 
     color: white;
-    background: linear-gradient(135deg, #0077ff, #00c6ff);
-    box-shadow: 0 6px 15px rgba(0, 122, 255, 0.4);
+    background: linear-gradient(135deg, #4da3ff, #70cdff);
+    box-shadow: 0 6px 15px rgba(0, 122, 255, 0.3);
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.55);
+    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.45);
 }
 
 button:active {
@@ -108,13 +107,13 @@ button:active {
 }
 
 
-/* --- Resultado con tarjeta bonita --- */
+/* --- Resultado final --- */
 .resultado {
     margin-top: 30px;
     padding: 20px;
 
-    background: rgba(255,255,255,0.85);
-    border-left: 6px solid #2196F3;
+    background: rgba(255,255,255,0.9);
+    border-left: 6px solid #4da3ff;
     border-radius: 10px;
 
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -129,7 +128,7 @@ button:active {
 
 .resultado h3 {
     margin-top: 0;
-    color: #1565c0;
+    color: #0b3d91;
 }
 
 .resultado p {

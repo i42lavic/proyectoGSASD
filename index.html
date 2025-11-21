@@ -47,6 +47,72 @@
             <option value="no">No</option>
         </select>
 
+        <label>6. Tipo de datos</label>
+        <select id="tipoDatos">
+            <option value="documentos">Documentos</option>
+            <option value="multimedia">Vídeo / multimedia</option>
+            <option value="estructurados">Datos estructurados</option>
+            <option value="archivado">Backups y archivado</option>
+        </select>
+
+        <label>7. Nivel de seguridad requerido</label>
+        <select id="seguridad">
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta (cumplimiento normativo)</option>
+        </select>
+
+        <label>8. Presupuesto disponible</label>
+        <select id="presupuesto">
+            <option value="bajo">Bajo</option>
+            <option value="medio">Medio</option>
+            <option value="alto">Alto</option>
+        </select>
+
+        <label>9. Requisitos de latencia / velocidad</label>
+        <select id="latencia">
+            <option value="baja">Muy baja</option>
+            <option value="media">Media</option>
+            <option value="no_importa">No importa</option>
+        </select>
+
+        <label>10. ¿Necesitáis un entorno híbrido (nube + local)?</label>
+        <select id="hibrido">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>11. Cumplimiento normativo necesario</label>
+        <select id="cumplimiento">
+            <option value="ninguno">Ninguno</option>
+            <option value="gdpr">GDPR</option>
+            <option value="hipaa">HIPAA</option>
+            <option value="iso">ISO 27001</option>
+        </select>
+
+        <label>12. Versionado avanzado</label>
+        <select id="versionado">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>13. ¿Requiere que los datos permanezcan en la UE?</label>
+        <select id="region">
+            <option value="eu">Sí, deben estar en Europa</option>
+            <option value="global">No, da igual</option>
+        </select>
+
+        <label>14. Integración con CI/CD</label>
+        <select id="cicd">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>15. ¿Necesitas APIs avanzadas o automatización?</label>
+        <select id="api">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
 
         <button onClick="recomendar()">Obtener recomendación</button>
         <div id="resultado"></div>

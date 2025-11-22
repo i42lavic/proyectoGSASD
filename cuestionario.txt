@@ -1,0 +1,82 @@
+$CATEGORY: $course$/Valor por defecto para Gestion de Archivos y Servicios Distribuidos/PLATAFORMAS EN LA NUBE - Laín Villegas Carmen y López Villalba Paula
+
+//1
+¿Qué plataforma sería más recomendable para una agencia de marketing que prioriza la colaboración en tiempo real y sincronización de archivos multimedia?
+{
+~%-50%Amazon S3
+~%-50%Google Cloud Storage
+=Dropbox 
+~%-50%Azure Blob Storage
+}
+//2
+Según el estudio, ¿qué tipo de almacenamiento en la nube combina elementos de nube pública y privada?
+{
+~%-50%Nube comunitaria
+~%-50%Nube pública
+=Nube híbrida
+~%-50%Nube privada
+}
+//3
+¿Qué característica técnica es común a Amazon S3, Azure Blob Storage y Google Cloud Storage pero NO a Dropbox?
+{
+~%-50%Sincronización en tiempo real
+=Hosting web estático 
+~%-50%Control de versiones
+~%-50%Panel administrativo
+}
+//4
+Para una empresa financiera que requiere alto cumplimiento normativo y usa Microsoft 365, ¿qué plataforma recomienda el estudio?
+{
+~%-50%Google Cloud Storage
+~%-50%Dropbox
+~%-50%Amazon S3
+=Azure Blob Storage 
+}
+//5
+¿Qué mecanismo de seguridad utilizan las cuatro plataformas para proteger datos en tránsito?
+{
+~%-50%AES-128
+=SSL/TLS (HTTPS)
+~%-50%Cifrado RSA
+~%-50%VPN obligatoria
+}
+//6
+¿Qué plataforma tiene la mejor integración nativa con herramientas de big data como BigQuery y Vertex AI?
+{
+~%-50%Amazon S3
+~%-50%Dropbox
+~%-50%Azure Blob Storage
+=Google Cloud Storage 
+}
+//7
+¿Qué tipo de almacenamiento organiza los datos en una estructura jerárquica de carpetas y archivos?
+{
+~%-50%Almacenamiento de objetos
+~%-50%Almacenamiento de bloques
+=Almacenamiento de archivos
+~%-50%Almacenamiento distribuido
+}
+//8
+¿Qué plataforma NO ofrece un plan gratuito inicial según las tablas comparativas?
+{
+~%-50%Dropbox
+~%-50%Azure Blob Storage
+=Amazon S3
+~%-50%Google Cloud Storage
+}
+//9
+¿Qué característica hace único a Dropbox frente a las otras plataformas analizadas?
+{
+~%-50%Capacidad de hosting web
+=Sincronización diferencial (delta sync)
+~%-50%Almacenamiento ilimitado
+~%-50%Integración con machine learning
+}
+//10
+Para archivado económico a largo plazo, ¿qué plataforma ofrece la opción más económica según el estudio?
+{
+~%-50%Dropbox
+~%-50%Azure Blob Storage
+=Amazon S3 (Glacier)
+~%-50%Google Cloud Storage
+}

@@ -1,0 +1,23 @@
+[2025-11-25 13:00:00] ---- INICIO DE BACKUP ----
+[2025-11-25 13:00:01] Subiendo archivo: excel.xlsx
+[2025-11-25 13:00:01] ✔ Archivo subido correctamente: excel.xlsx
+[2025-11-25 13:00:01] Subiendo archivo: hola.txt
+[2025-11-25 13:00:02] ✔ Archivo subido correctamente: hola.txt
+[2025-11-25 13:00:02] Subiendo archivo: imagenes/img.txt
+[2025-11-25 13:00:02] ✔ Archivo subido correctamente: imagenes/img.txt
+[2025-11-25 13:00:02] Subiendo archivo: logs/backup_log_2025-11-25.txt
+[2025-11-25 13:00:02] ✔ Archivo subido correctamente: logs/backup_log_2025-11-25.txt
+[2025-11-25 13:00:02] Subiendo archivo: pruebanuevo.docx
+[2025-11-25 13:00:03] ✔ Archivo subido correctamente: pruebanuevo.docx
+[2025-11-25 13:00:03] ---- FIN DE BACKUP ----
+
+[2025-11-25 13:35:17] ---- INICIO DE BACKUP ----
+[2025-11-25 13:35:19] Subiendo archivo: Finanzas/excel.xlsx
+[2025-11-25 13:35:19] ✔ Archivo subido correctamente: Finanzas/excel.xlsx
+[2025-11-25 13:35:19] Archivo no modificado, se omite: hola.txt
+[2025-11-25 13:35:19] Subiendo archivo: logs/backup_log_2025-11-25.txt
+[2025-11-25 13:35:20] ✔ Archivo subido correctamente: logs/backup_log_2025-11-25.txt
+[2025-11-25 13:35:20] Subiendo archivo: Proyectos/pruebanuevo.docx
+[2025-11-25 13:35:20] ✔ Archivo subido correctamente: Proyectos/pruebanuevo.docx
+[2025-11-25 13:35:20] ---- FIN DE BACKUP ----
+
